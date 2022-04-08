@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class main {
@@ -15,14 +16,16 @@ public class main {
 
         System.out.println("Would you like to convert to MPH? Y/N");
         String choice = scanner.nextLine();
+        choice = choice.toUpperCase();
 
-        if(choice.equals("y") || choice.equals("Y"))
+        switch(choice)
         {
-            toMph = true;
-        }
-        else
-        {
-            toMph = false;
+            case "Y":
+                toMph = true;
+                break;
+            default:
+                toMph = false;
+                break;
         }
 
         System.out.println(convert(val, toMph));
