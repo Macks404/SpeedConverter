@@ -13,8 +13,6 @@ public class main {
 
         scanner.nextLine();
 
-        System.out.println("This is a test");
-
         System.out.println("Would you like to convert to MPH? Y/N");
         String choice = scanner.nextLine();
 
